@@ -1,13 +1,13 @@
 begin
-    input currentMonth, noOfPeriod
+    input currentMonth, noOfPeriods
 
     // current month validation
     if currentMonth >= 1 and currentMonth <= 12 then
         // number of periods validation
-        if noOfPeriod == 1 or noOfPeriod == 2 or noOfPeriod == 4 or noOfPeriod == 12 then
+        if noOfPeriods == 1 or noOfPeriods == 2 or noOfPeriods == 4 or noOfPeriods == 12 then
 
             // window size
-            windowSize = 12 / noOfPeriod
+            windowSize = 12 / noOfPeriods
 
             // window
             window = (currentMonth - 1) / windowSize
