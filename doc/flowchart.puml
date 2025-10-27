@@ -1,0 +1,18 @@
+' base flow chart syntax in plantuml flow chart
+
+@startuml
+start
+
+:Process step;
+:Another process;
+
+if (Condition?) then (yes)
+  :True branch;
+else (no)
+  :False branch;
+endif
+
+:Continue process;
+
+stop
+@enduml
