@@ -4,6 +4,7 @@
 function getWindowIdx(noOfPeriods, currentMonth)
 {
     const validPeriods = [1,2,4,12];
+    const months = 12;
     let window = -1;
 
     try {
@@ -17,6 +18,14 @@ function getWindowIdx(noOfPeriods, currentMonth)
         if(!validPeriods.includes(noOfPeriods)) {
             throw new Error("Invalid number of periods");
         }
+
+        // window size
+        const windowSize = months / noOfPeriods;
+
+        // window index
+        window = Math.ceil((currentMonth - 1) / windowSize);
+
+        return window;
 
     } catch(error) {
         console.error(error);
