@@ -27,7 +27,7 @@ function getWindowIdx(noOfPeriods, currentMonth)
 
 
     } catch(error) {
-        console.error(error);
+        // console.error(error);
         return -1;
     }
 
@@ -35,6 +35,4 @@ function getWindowIdx(noOfPeriods, currentMonth)
 
 }
 
-modules.exports = { getWindowIdx };
-
-// console.log(getWindowIdx(12, 12));
+module.exports = { getWindowIdx };
