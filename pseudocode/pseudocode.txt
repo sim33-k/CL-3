@@ -1,0 +1,27 @@
+begin
+    input currentMonth, noOfPeriod
+
+    // current month validation
+    if currentMonth >= 1 and currentMonth <= 12 then
+        // number of periods validation
+        if noOfPeriod == 1 or noOfPeriod == 2 or noOfPeriod == 4 or noOfPeriod == 12 then
+
+            // window size
+            windowSize = 12 / noOfPeriod
+
+            // window
+            window = (currentMonth - 1) / windowSize
+
+            display window
+        
+        else
+            display "Number of periods must be either 1, 2, 4 or 12"
+            
+        endif
+        
+    else 
+        display "Current Month should be between 1 and 12"
+
+    endif
+
+end
