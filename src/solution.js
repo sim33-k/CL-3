@@ -3,6 +3,19 @@
 
 function getWindowIdx(noOfPeriods, currentMonth)
 {
- //your code here
+    // validation
+    // validate current month
+    try {
+        if(currentMonth > 12 || currentMonth < 1) {
+            throw new Error("The current month should be between 1 and 12");
+        }
+
+
+    } catch(error) {
+        console.error(error);
+        return -1;
+    }
+
+
  return window;
 }
