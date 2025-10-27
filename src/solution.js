@@ -3,13 +3,20 @@
 
 function getWindowIdx(noOfPeriods, currentMonth)
 {
-    // validation
-    // validate current month
+    const validPeriods = [1,2,4,12];
+    let window = -1;
+
     try {
+        
+        // validate current month
         if(currentMonth > 12 || currentMonth < 1) {
             throw new Error("The current month should be between 1 and 12");
         }
 
+        // validate number of periods
+        if(!validPeriods.includes(noOfPeriods)) {
+            throw new Error("Invalid number of periods");
+        }
 
     } catch(error) {
         console.error(error);
