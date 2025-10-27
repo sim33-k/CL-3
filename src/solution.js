@@ -23,15 +23,14 @@ function getWindowIdx(noOfPeriods, currentMonth)
         const windowSize = months / noOfPeriods;
 
         // window index
-        window = Math.ceil((currentMonth - 1) / windowSize);
+        window = Math.floor((currentMonth - 1) / windowSize);
 
-        return window;
 
     } catch(error) {
         console.error(error);
         return -1;
     }
 
+    return window;
 
- return window;
 }
