@@ -76,7 +76,7 @@ node test.js
 
 ## Flowchart
 
-![Flowchart](FlowChart.drawio.png)
+![Flowchart](doc/FlowChart.drawio.png)
 
 *Flowchart showing the algorithm logic*
 
