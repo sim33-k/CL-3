@@ -11,7 +11,7 @@
 
 ## Question
 
-![Question 3](screenshots/question3.png)
+![Question 3](images/question3.png)
 
 ---
 
@@ -187,25 +187,25 @@ The test was executed for all four scenarios (noOfPeriods = 1, 2, 4, 12) with mo
 
 ### Scenario 1: 1 Period
 
-![Test results for 1 period](screenshots/test1.png)
+![Test results for 1 period](images/test1.png)
 
 *Test results for 1 period*
 
 ### Scenario 2: 2 Periods
 
-![Test results for 2 periods](screenshots/test2.png)
+![Test results for 2 periods](images/test2.png)
 
 *Test results for 2 periods*
 
 ### Scenario 3: 4 Periods
 
-![Test results for 4 periods](screenshots/test3.png)
+![Test results for 4 periods](images/test3.png)
 
 *Test results for 4 periods*
 
 ### Scenario 4: 12 Periods
 
-![Test results for 12 periods](screenshots/test4.png)
+![Test results for 12 periods](images/test4.png)
 
 *Test results for 12 periods*
 
